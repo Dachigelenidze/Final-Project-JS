@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header >
+      <nav id="nav" class="nav"></nav>
+    <div class="burger-bar " id="burgerBar">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+    
+      
+      <a href="index.html"><img src="img/beerlogo.png" alt="logo" class="logo "></a>
+      <h2 class="satauri">WHO SAID THAT YOU CAN NOT BUY HAPPINESS... BUY CRAFT BEER</h2>
+      <div class="buttons flex">
+          <Button class="registernow" id="registernow"> Register Now</Button>     
+          <div class="overlay1" id="overlay1">
+            <i class="fa-solid fa-circle-xmark"></i>
+
+            <!-- რეგისტრაციის ოვერლეი -->
+          <section class="form">
+            <form action="" id="reg-form" class="form" method="post">
+              <div class="validation">
+                <label for="firstname">First Name&nbsp &nbsp </label>
+                <input type="text" id="firstname" name="username" class="inputsize"/>
+                <p class="error-text" id="error-username">
+                  
+                </p>
+              </div>
+              <div class="validation">
+                <label for="password1">Password &nbsp &nbsp &nbsp</label>
+                <input type="password" id="password1" name="mypassword" class="inputsize" />
+                <i class="fa-solid fa-eye" id="toggleicon"></i>
+                <p class="error-text" id="error-mypassword">
+                </p>
+              </div>
+              <div class="validation">
+                <label for="password2">Re-Password </label>
+                <input type="password" id="password2" name="mypassword2" class="inputsize"  />
+                <p class="error-text" id="error-mypassword2">
+                </p>
+              </div>
+              <div class="validation">
+                <input type="radio" name="age" id="age1" class="2" />
+                <label for="age1" class="labelage">18-25</label>
+                
+                <input type="radio" id="age2" name="age" class="2" />
+                <label for="age2" class="labelage">25+</label>
+                <p class="error-text" id="error-age">
+                
+                  
+              </div>
+              <div class="validation">
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree" class="labelage"> I agree   Terms and Conditions</label>
+                <p class="error-text" id="error-agree">
+                  
+              </div>
+              
+              <div class="validation">
+              <button type="submit" >
+                  <i class="fa-solid fa-paper-plane"></i> 
+              </button>
+              </div>
+            </form>
+          </section>
+        </div>
+         <!-- დალოგინების ოვერლეი -->
+        <button class="login" id="login">LOG IN</button>
+        <div class="overlay2" id="overlay2">
+          <i class="fa-solid fa-square-xmark"></i>
+          <form action="" id="form"  class="formvalidation2" method="POST">
+            <label for="username">Username  </label>
+            <input type="text" id="username" name="username"> 
+            <input type="checkbox" id="save" class="save"/>
+            <p class="errortext" id="errortext"></p>  
+            <label for="psw">Password &nbsp </label>
+            <input type="password" id="psw" name="psw" >
+            <p class="errortext" id="errorpassword"></p>
+            <input type="submit" value="Log In" class="loginvalidation">
+          </form>
+        </div>
+    </header>
+    <main id="main">
+      <div class="wrapper1">
+        <div class="box-wrapper1">
+          <h2>What is the craft beer</h2>
+          <p>
+            Craft beer is defined as a specialty beer produced in limited quantities and a craft brewery is defined as having annual production of 6 million barrels of beer or less. The strength and beauty of a craft beer and a craft brewery is innovation. Brewing beer in small quantities allows for testing and sampling of many different ingredients creating an endless number of tastes. Focused on taste and driven by consumer demand, the craft beer industry has changed the makeup of the beer market.
+          </p>
+          <img src="icons/barrel.png" alt="">
+          <div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <div class="box-wrapper2 flex">
+          <div class="wrapper-content">
+            <p class="purchase">Purchase The Best Quality Beer In The World</p>
+            <h2>
+              Discover Brands <br />
+              Enjoy Unique Tastes
+            </h2>
+            <p class="text-wrapper">
+              Explore different beer styles and discover craft breweries near you!
+              <p class="about">
+              Who we are and what we do
+            </p>
+            <p class="text-wrapper">
+              Naturale Brewery LLC was founded by Sergey Makarov in 2016. It all started when Sergey and  his wife were newly married and were on their honey moon trip across  – Czech Republic and Germany, and were enjoying the most delicious beer,
+            </p>
+            <button class="learn-more" id="learn-more">Learn More</button>
+            <div class="overlay" id="overlay">
+              <i class="fa-solid fa-rectangle-xmark"></i>
+
+              <p class="popuptext ">she asked- “What are we going to do in Georgia when our voyage ends?” and looking in each other's eyes, and an idea came up to them at once - a little family Breweryy,And since then our goal is to make the best quality product with love and passion, and bring pleasure and joy to your life through the unique rich tastes and flavors.At the moment we are small independent craft brewing company, trying to give you best quality for reasonable price with all of our heart, because all of us equally deserve to have some joy and happiness in our lives. We do welcome people to explore the world of craft beer and focus our effort mostly on ale. NaturAle is located in Georgia and at the moment works on local market.We're growing, we're changing, we're experimenting and therefore we are always ready to please you with cool surprises. Stay with us and take from life all the best, as we are planning to greet tomorrow with open heart and open mind...</p>
+            
+              <img src="icons/overlay-icon.png" alt="" class="overlay-icon">
+              
+          </div>
+          
+          <i class="fa-solid fa-comment" onclick="show()"></i>
+          
+            
+        <div class="chatbox" id="chatbox">
+            <div class="chatboxheader">
+                <p>Send us your message</p>
+                <p class="close" onclick="hide()">&#215;</p>
+            </div>
+            <i class="fa-solid fa-comment" onclick="show()"></i>
+
+            <div class="chatboxmain">
+
+                <input type="text" name="firstname" id="firtname" placeholder="Your Name">
+
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Please type text here"></textarea>
+
+                <p class="send" onclick="hide()">Send</p>
+            </div>
+    </main>
+    <footer id="footer">
+      <ul class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        
+      </ul>
+      <a href="index.html"><img src="img/beerlogo.png" alt="logo" class="logo"></a>        
+
+      <div class="footnav">
+        <p class="foottext">© 2023 All Rights Reserved</p>
+        <div class="social">
+          <p>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="icons/youtube.webp" alt="Youtube" />
+            </a>
+          </p>
+              <p>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="icons/fb.png" alt="Facebook" />
+            </a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="icons/instagram.png" alt="instagram" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>

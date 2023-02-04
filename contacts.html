@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+  
+  </head>
+  <body>
+    <header >
+      <nav class="nav" id="nav"></nav>
+      <div class="burger-bar " id="burgerBar">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      
+        
+      <a href="index.html"><img src="img/beerlogo.png" alt="logo" class="logo"></a>    
+      <h2 class="satauri">WHO SAID THAT YOU CAN NOT BUY HAPPINESS... BUY CRAFT BEER</h2>
+    
+      
+    </header>
+    
+    <main class="contactmain" id="main">
+      <div class="contactcontainer">
+        <h2 class="questions">Frequently Asked Questions</h2>
+        
+        <div class="accordion-block">
+            <h2 class="title1">Do you have non-alcoholic beer?</h2>
+            <p class="textaccordion">We sure do!
+              As a family business, we pride ourselves on supporting other small local businesses such as the many breweries in Calgary and Alberta. We easily fill our shelves and taps with Alberta alone, but we also want to bring craft from all over the world to our Collective family.
+            </p>
+            
+        </div>
+        
+            
+            <div class="accordion-block">
+                <h2 class="title1">Can my children come into the shop?</h2>
+           
+                <p class="textaccordion">Yes. We allow minors as long as they are accompanied by an adult. We love getting to know you and your family, including your children. We do ask that you supervise your children while you shop, as we want everyone shopping to enjoy their experience. We're very appreciative when kids are patient and don't treat our space like a gymnasium. 
+
+                </p>
+            </div>
+            
+                
+                <div class="accordion-block">
+                    <h2 class="title1">Can I order  beer from you? Working Hours</h2>
+                    <p class="textaccordion">Yes, Yes, Yes!!!
+
+                      If you are in love with a certain packaged product, we will bring it in for you, as long as it's available for distribution in Alberta.
+                      
+                      We also sell kegs! We would be more than happy to bring in a keg for your Kegerator, or for your special event. 
+                      Working Hours , Everyday from 10:00 AM to 11:00 PM</p>
+                      
+                    
+                </div>
+                
+    </div>
+
+      
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23827.1955870238!2d44.733703781594144!3d41.71189858801179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447360715c470f%3A0x31f7b49e87144346!2zQmVlciZDcmFmdCDhg5rhg6Phg5Phg5gg4YOT4YOQIOGDmeGDoOGDkOGDpOGDouGDmA!5e0!3m2!1sen!2sge!4v1674465569373!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapmain"></iframe>
+        <h3 class="visitus">Visit us <i class="fa-solid fa-arrow-up"></i></h3>
+        
+        <p class="further"> IF YOU HAVE ANY FURTHER QUESTIONS, CLICK CHAT BUTTON BELOW AND SEND US YOUR MESSAGE.<i class="fa-solid fa-arrow-trend-down"></i></p>
+        <i class="fa-solid fa-comment" onclick="show()"></i>
+          
+            
+        <div class="chatbox" id="chatbox">
+            <div class="chatboxheader">
+                <p>Send us your message</p>
+                <p class="close" onclick="hide()">&#215;</p>
+            </div>
+            <i class="fa-solid fa-comment" onclick="show()"></i>
+
+            <div class="chatboxmain">
+
+                <input type="text" name="firstname" id="firtname" placeholder="Your Name">
+
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Please type text here"></textarea>
+
+                <p class="send" onclick="hide()">Send</p>
+            </div>
+
+            
+    </main >
+
+    
+
+    <footer id="footer">
+      
+      <ul class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        
+      </ul>
+      <a href="index.html"><img src="img/beerlogo.png" alt="logo" class="logo"></a>        
+
+      <div class="footnav">
+        <p class="dot">© 2023 All Rights Reserved</p>
+        <div class="social">
+          <p>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="icons/youtube.webp" alt="Youtube" />
+            </a>
+          </p>
+              <p>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="icons/fb.png" alt="Facebook" />
+            </a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="icons/instagram.png" alt="instagram" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/chat.js"></script>
+    
+    
+  </body>
+</html>
