@@ -1,94 +1,77 @@
-document.getElementById("reg-form").addEventListener("submit", function (element) {
-  element.preventDefault();
+"use strict";
 
-  let errors = {};
-  let form = element.target;
+document
+  .getElementById("reg-form")
+  .addEventListener("submit", function (element) {
+    element.preventDefault();
 
-  
-  let usernameField = document.getElementById("firstname").value;
-  
+    let errors = {};
+    let form = element.target;
 
-  if (usernameField.length < 5) {
-    errors.username = "Username must contain 8 symbols";
-  }
+    let usernameField = document.getElementById("firstname").value;
 
-  if (usernameField == "") {
-    errors.username = "Username can not be empty";
-  }
+    if (usernameField.length < 5) {
+      errors.username = "Username must contain 8 symbols";
+    }
 
-  
-  let password1 = document.getElementById("password1").value;
-  let password2 = document.getElementById("password2").value;
+    if (usernameField == "") {
+      errors.username = "Username can not be empty";
+    }
 
-  if (password1 == "") {
-    errors.mypassword = "Password field can not be empty";
-  }
-  if (password1 != password2) {
-    errors.mypassword2 = "Passwords don't match";
-  }
+    let password1 = document.getElementById("password1").value;
+    let password2 = document.getElementById("password2").value;
 
- 
-  let agree = document.getElementById("agree").checked;
-  if (!agree) {
-    
-    errors.agree = "You must agree our terms and conditions";
-  }
+    if (password1 == "") {
+      errors.mypassword = "Password field can not be empty";
+    }
+    if (password1 != password2) {
+      errors.mypassword2 = "Passwords don't match";
+    }
 
+    let agree = document.getElementById("agree").checked;
+    if (!agree) {
+      errors.agree = "You must agree our terms and conditions";
+    }
 
-  let age = false;
-  form.querySelectorAll('[name = "age"]').forEach((item) => {
-    if (item.checked) {
-      age = true;
+    let age = false;
+    form.querySelectorAll('[name = "age"]').forEach((item) => {
+      if (item.checked) {
+        age = true;
+      }
+    });
+
+    if (!age) {
+      errors.age = "Please select your age";
+    } else
+      form.querySelectorAll(".error-text").forEach((item) => {
+        item.textContent = " ";
+      });
+
+    for (let element in errors) {
+      let pError = document.getElementById("error-" + element);
+
+      if (pError) {
+        pError.textContent = errors[element];
+      }
+      if (Object.keys(errors).length == 0) {
+        form.submit();
+      }
     }
   });
 
-  if (!age) {
-    errors.age = "Please select your age";
-  }
-  else
+let toggleIcon = document.getElementById("toggleicon");
 
-  form.querySelectorAll('.error-text').forEach(  (item) => {
-    item.textContent = " ";
-
-})
-
-  for( let element in errors){
-
-
-    let pError = document.getElementById('error-' + element)
-
-    if(pError) {
-        pError.textContent = errors[element]
-    }
-    if(Object.keys(errors).length == 0){
-        form.submit();
-    }
-
+toggleIcon.addEventListener("click", function () {
+  if (password1.type == "password") {
+    password1.setAttribute("type", "text");
+    toggleIcon.classList.remove("fa-eye");
+    toggleIcon.classList.add("fa-eye-slash");
+  } else {
+    password1.setAttribute("type", "password");
+    toggleIcon.classList.remove("fa-eye-slash");
+    toggleIcon.classList.add("fa-eye");
   }
 });
-
-let toggleIcon = document.getElementById('toggleicon');
-
-toggleIcon.addEventListener('click', function(){
-    if( password1.type == 'password')
-{
-    password1.setAttribute('type','text');
-    toggleIcon.classList.remove('fa-eye');
-    toggleIcon.classList.add('fa-eye-slash')
-}
-   
-
-    else{
-        password1.setAttribute('type','password');
-        toggleIcon.classList.remove('fa-eye-slash');
-        toggleIcon.classList.add('fa-eye')
-        
-        
-
-    }
-
-})
-
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
